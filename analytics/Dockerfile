@@ -16,4 +16,4 @@ ENV DB_PORT 5433
 ENV DB_NAME mydatabase
 
 CMD python app.py
-
+EXPOSE 5153
