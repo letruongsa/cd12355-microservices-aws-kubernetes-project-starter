@@ -5,7 +5,7 @@ metadata:
 data:
   DB_NAME: "sale_db"
   DB_USERNAME: "sale"
-  DB_PASSWORD: "sale_pa"
+  #  DB_PASSWORD: "sale_pa"
   DB_HOST: "postgresql-service"
   DB_PORT: "5432"
 ---

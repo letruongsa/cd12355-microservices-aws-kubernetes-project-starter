@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: coworking
-        image: 752984462683.dkr.ecr.us-east-1.amazonaws.com/coworking:4
+        image: 752984462683.dkr.ecr.us-east-1.amazonaws.com/coworking:10
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -70,7 +70,7 @@ spec:
               key: DB_NAME
         - name: DB_PASSWORD
           valueFrom:
-            configMapKeyRef:
-              name: configmap-postgresql
+            secretKeyRef:
+              name: secret-postgresql
               key: DB_PASSWORD
       restartPolicy: Always
